@@ -367,3 +367,80 @@ footer {
   font-style: italic;
   position: fixed;
 }
+
+@media screen and (max-width: 1000px) {
+  /* line 208, ../sass/screen.sass */
+  body {
+    width: 760px;
+  }
+
+  /* line 210, ../sass/screen.sass */
+  header {
+    width: 280px;
+  }
+
+  /* line 212, ../sass/screen.sass */
+  #main {
+    width: 480px;
+    margin-left: 280px;
+  }
+  /* line 216, ../sass/screen.sass */
+  #main section h2 {
+    font-size: 28px;
+  }
+
+  /* line 219, ../sass/screen.sass */
+  #work img {
+    width: 105%;
+  }
+}
+@media screen and (max-width: 765px) {
+  /* line 223, ../sass/screen.sass */
+  body {
+    width: 100%;
+  }
+
+  /* line 225, ../sass/screen.sass */
+  header {
+    width: 100%;
+    background-color: white;
+    padding: 0 0 10px;
+    margin: 0;
+    top: 0;
+    box-shadow: 0 0 8px #444444;
+  }
+  /* line 232, ../sass/screen.sass */
+  header hgroup {
+    float: left;
+    width: 60%;
+  }
+  /* line 235, ../sass/screen.sass */
+  header nav {
+    float: right;
+    width: 25%;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+  /* line 240, ../sass/screen.sass */
+  header nav li {
+    float: left;
+    width: 45%;
+    margin-right: 3%;
+  }
+  /* line 244, ../sass/screen.sass */
+  header nav li a:hover {
+    padding-left: 0;
+  }
+
+  /* line 246, ../sass/screen.sass */
+  #main {
+    width: 95%;
+    margin-left: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  /* line 251, ../sass/screen.sass */
+  #main section {
+    padding-top: 140px;
+  }
+}
