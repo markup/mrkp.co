@@ -30,7 +30,7 @@ $(document).ready(function() {
     type: 'post',
     statusCode: {
       404: function() {
-        $("#contactFormResponse").html("An error has ocurred. Please fill out all required fields.");
+        $("#contactFormResponse").html("An error has ocurred. Please fill out all the fields.");
       },
       200: function() {
         $("#contactFormResponse").html("Message sent! Thank you.");
