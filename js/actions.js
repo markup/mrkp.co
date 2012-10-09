@@ -1,14 +1,19 @@
 $(document).ready(function() {
+  $("section").not("#welcome").css("min-height", $(window).height());
+
   $(window).bind('hashchange', function(event) {
     var tgt = location.hash.replace(/^#?/,'');
     if ( document.getElementById(tgt) ) {
       $.smoothScroll({scrollTarget: '#' + tgt});
+      if (tgt == "contact") {
+        $("#name").focus();
+      }
       $(".active").removeClass("active");
       $("nav a[href=#" + tgt + "]").parent().addClass("active");
     }
   });
 
-  $(window).trigger('hashchange');
+  $(window).trigger("hashchange");
 
   $("nav a").smoothScroll({
     easing: "swing",
