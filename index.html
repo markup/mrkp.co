@@ -9,6 +9,11 @@
   <![endif]-->
   <script type="text/javascript" src="//use.typekit.net/cev8eis.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.smooth-scroll.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.ba-bbq.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.form.js"></script>
+  <script type="text/javascript" src="/js/actions.js"></script>
 </head>
 <body>
   <header>
@@ -18,10 +23,10 @@
     </hgroup>
     <nav>
       <ol>
-        <li>Home</li>
-        <li>Work</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li class="active"><a href="#welcome">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ol>
     </nav>
   </header>
@@ -34,14 +39,14 @@
     <section id="work">
       <h2>Look at some of our work we made!</h2>
       <article>
-        <img src="/img/work_soloff.png">
+        <img src="/img/work_soloff_1.png">
         <h3>Designed &amp; developed for <strong>Soloff Properties, Inc.</strong> &rarr; <a href="http://soloffproperties.com">soloffproperties.com</a></h3>
         <p>
           This project included an identity revamp, using elements from a previously haphazardly kept brand, and executing several pieces (including a website, stationery, real estate signs, and business cards) in an approachable and consistent manner.
         </p>
       </article>
       <article>
-        <img src="/img/work_paperhive1.png">
+        <img src="/img/work_paperhive_1.png">
         <h3>Designed &amp; developed for <strong>Paper Hive</strong> &rarr; <a href="http://www.thepaperhive.com">thepaperhive.com</a></h3>
         <p>
           A collaboration with Axio Design, in Colorado Springs. Axio designed the brand and commissioned the design of a small website to carry the brand.
@@ -64,10 +69,58 @@
       
     </section>
     <section id="about">
-      /markup can be a one-man operation, or a several people operation. <em>It really depends.</em>
+      <h2>This is how it rolls.</h2>
+      <img src="/img/portrait.jpg" class="portrait">
+      <p>
+        /markup is essentially a one-man operation run by Alfonso G&oacute;mez-Arzola (that would be the handsome fellow to the right). Alfonso designs and develops the front end of his client&rsquo;s projects, while collaborating with trusted back-end developers on select projects which require it. On occassion, he’ll collaborate with other designers who rely on his code-wrangling skills to bring their designs to fruition. This small yet collaborative approach keeps /markup&rsquo;s operation lean whilst retaining the capacity to handle complex projects.
+      </p>
+      <p>
+        Alfonso has a background in print design. A self-taught designer, his unorthodox career path has led him to work with a variety of clients under several design firms. Most notably, he has worked with the United States Olympic Committee, Banco Popular de Puerto Rico, Museum of Contemporary Art of Puerto Rico, NJCAA, and Camera Bits; in collaboration with designers such as Alberto Rigau (estudio interlínea) and Mun Choi (Axio Design), as well as creative firm Momenta Creative, all of whom he still collaborates with regularly.
+      </p>
+      <p>
+        For more information, please use the contact form below to get in touch.
+      </p>
     </section>
     <section id="contact">
-      Chattanooga, TN
+      <h2>Drop us a line!</h2>
+      <p>
+        Think you might want to hire us? Looking for more information? Want to say hi? You can do all of those things by filling out the form below.
+      </p>
+      <form id="contactForm" action="/postmaster.php" method="post">
+        <input type="hidden" name="subject" value="Contact from mrkp.co">
+        <fieldset>
+          <p>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" class="clearable" name="Name" placeholder="Your name.">
+          </p>
+          <p>
+            <label for="email">Your email address:</label>
+            <input type="email" id="email" class="clearable" name="Email" placeholder="Your email address.">
+          </p>
+        </fieldset>
+        <fieldset class="wide">
+          <p>
+            <label for="status_hello" class="visible">What&rsquo;s up?</label>
+            <select id="status_hello" name="Status">
+              <option value="I&rsquo;m just saying hi.">I&rsquo;m just saying hi.</option>
+              <option value="My project starts in a few weeks or months.">My project starts in a few weeks or months.</option>
+              <option value="I need to get started right away.">I need to get started right away.</option>
+              <option value="I would like for us to collaborate in a joint venture.">I would like for us to collaborate in a joint venture.</option>
+              <option value="Help! I need you to drop everything and make all my problems go away!">Help! I need you to drop everything and make all my problems go away!</option>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset class="wide">
+          <p>
+            <label>Your message:</label>
+            <textarea name="Message" class="clearable" placeholder="Your message."></textarea>
+          </p>
+        </fieldset>
+        <input type="submit" value="Send">
+        <p id="contactFormResponse">
+
+        </p>
+      </form>
     </section>
   </div>
   <footer>

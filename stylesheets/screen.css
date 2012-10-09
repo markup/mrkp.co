@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,61 +24,61 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 11, ../sass/screen.sass */
+/* line 13, ../sass/screen.sass */
 html {
   font-family: "ff-meta-web-pro", Helvetica, sans-serif;
 }
 
-/* line 14, ../sass/screen.sass */
+/* line 16, ../sass/screen.sass */
 body {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 18, ../sass/screen.sass */
+/* line 20, ../sass/screen.sass */
 header {
   width: 28%;
   margin-right: 3%;
@@ -86,11 +86,11 @@ header {
   float: left;
   position: fixed;
 }
-/* line 24, ../sass/screen.sass */
+/* line 26, ../sass/screen.sass */
 header hgroup {
   padding-left: 34px;
 }
-/* line 26, ../sass/screen.sass */
+/* line 28, ../sass/screen.sass */
 header hgroup h1 {
   color: transparent;
   text-indent: -100000px;
@@ -101,59 +101,94 @@ header hgroup h1 {
   margin-left: -34px;
   background-image: url("/img/markup_logo.png");
 }
-/* line 35, ../sass/screen.sass */
+/* line 37, ../sass/screen.sass */
 header hgroup h2 {
   color: #888888;
   line-height: 1.2em;
 }
 
-/* line 39, ../sass/screen.sass */
+/* line 41, ../sass/screen.sass */
 nav {
   margin-top: 60px;
   padding-left: 34px;
 }
-/* line 42, ../sass/screen.sass */
+/* line 44, ../sass/screen.sass */
+nav a {
+  -webkit-transition-property: padding-left;
+  -moz-transition-property: padding-left;
+  -o-transition-property: padding-left;
+  transition-property: padding-left;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+}
+/* line 47, ../sass/screen.sass */
+nav a:hover {
+  padding-left: 6px;
+}
+/* line 49, ../sass/screen.sass */
 nav li {
   margin-bottom: 8px;
 }
+/* line 51, ../sass/screen.sass */
+nav li.active a {
+  color: #bb2222;
+}
+/* line 53, ../sass/screen.sass */
+nav li.active a:hover {
+  padding-left: 0;
+}
 
-/* line 45, ../sass/screen.sass */
+/* line 56, ../sass/screen.sass */
 sup {
   font-size: 0.5em;
   line-height: 0.8em;
   vertical-align: top;
 }
 
-/* line 50, ../sass/screen.sass */
+/* line 61, ../sass/screen.sass */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 54, ../sass/screen.sass */
+/* line 65, ../sass/screen.sass */
 #main {
   width: 60%;
   float: left;
   margin-left: 35%;
   padding-bottom: 60px;
 }
-/* line 60, ../sass/screen.sass */
+/* line 71, ../sass/screen.sass */
 #main section {
   min-height: 300px;
   padding-top: 84px;
 }
-/* line 63, ../sass/screen.sass */
+/* line 74, ../sass/screen.sass */
 #main section img {
-  max-width: 100%;
+  max-width: 109%;
 }
-/* line 65, ../sass/screen.sass */
+/* line 76, ../sass/screen.sass */
+#main section img.portrait {
+  max-width: 50%;
+  max-height: 450px;
+  float: right;
+  margin: 4px 0 3% 3%;
+}
+/* line 81, ../sass/screen.sass */
 #main section h2 {
   font-size: 36px;
   line-height: 1.1em;
   font-weight: bold;
   color: #888888;
+  margin-bottom: 12px;
 }
-/* line 71, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
+#main section p {
+  margin-bottom: 12px;
+}
+/* line 90, ../sass/screen.sass */
 #main section#welcome p {
   background-image: url("/img/home.jpg");
   background-position: center bottom;
@@ -164,7 +199,7 @@ a {
   font-size: 48px;
   font-weight: bold;
 }
-/* line 80, ../sass/screen.sass */
+/* line 99, ../sass/screen.sass */
 #main section#welcome p span {
   font-size: 144px;
   line-height: 0.8em;
@@ -172,42 +207,152 @@ a {
   margin: 0 20px 0 0;
   border-bottom: 18px solid white;
 }
-/* line 86, ../sass/screen.sass */
+/* line 105, ../sass/screen.sass */
 #main section#welcome p i {
   font-style: italic;
 }
-/* line 88, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 #main section#welcome p a {
   cursor: help;
 }
-/* line 90, ../sass/screen.sass */
+/* line 109, ../sass/screen.sass */
 #main section#work {
   line-height: 1.3em;
 }
-/* line 92, ../sass/screen.sass */
+/* line 111, ../sass/screen.sass */
+#main section#work h2 {
+  margin-bottom: -24px;
+}
+/* line 113, ../sass/screen.sass */
 #main section#work article {
   margin-top: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 48px;
   color: #6f6f6f;
 }
-/* line 96, ../sass/screen.sass */
+/* line 117, ../sass/screen.sass */
 #main section#work article a {
   color: black;
 }
-/* line 98, ../sass/screen.sass */
+/* line 119, ../sass/screen.sass */
 #main section#work article a:hover {
   text-decoration: underline;
 }
-/* line 100, ../sass/screen.sass */
+/* line 121, ../sass/screen.sass */
 #main section#work article h3 {
   font-weight: bold;
+  margin-top: -18px;
 }
-/* line 102, ../sass/screen.sass */
+/* line 124, ../sass/screen.sass */
 #main section#work article img {
-  margin-left: -16px;
+  margin-left: -4.5%;
+}
+/* line 126, ../sass/screen.sass */
+#main section#about, #main section#contact {
+  line-height: 1.3em;
 }
 
-/* line 105, ../sass/screen.sass */
+/* line 130, ../sass/screen.sass */
+form label {
+  font-style: italic;
+  color: #888888;
+  margin-top: 18px;
+  display: inline-block;
+}
+/* line 135, ../sass/screen.sass */
+form p {
+  width: 48%;
+  margin-right: 4%;
+  float: left;
+}
+/* line 139, ../sass/screen.sass */
+form p:last-of-type {
+  margin-right: 0;
+}
+/* line 141, ../sass/screen.sass */
+form p label {
+  display: none;
+}
+/* line 143, ../sass/screen.sass */
+form p label.visible {
+  display: inline;
+}
+/* line 145, ../sass/screen.sass */
+form input {
+  font-family: "ff-meta-web-pro", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+}
+/* line 148, ../sass/screen.sass */
+form input[type="text"], form input[type="email"] {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  color: black;
+  padding: 0;
+}
+/* line 155, ../sass/screen.sass */
+form input[type="text"]:focus, form input[type="email"]:focus {
+  outline: none;
+  border-bottom: 1px solid #888888;
+}
+/* line 158, ../sass/screen.sass */
+form input[type="text"]::-webkit-input-placeholder, form input[type="email"]::-webkit-input-placeholder {
+  color: #888888;
+  font-style: italic;
+}
+/* line 161, ../sass/screen.sass */
+form input[type="text"]:-moz-placeholder, form input[type="email"]:-moz-placeholder {
+  color: #888888;
+  font-style: italic;
+}
+/* line 164, ../sass/screen.sass */
+form input[type="submit"] {
+  float: right;
+  font-size: 1.2em;
+}
+/* line 167, ../sass/screen.sass */
+form fieldset {
+  position: relative;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 171, ../sass/screen.sass */
+form fieldset.wide p {
+  width: 100%;
+  float: none;
+  margin: 12px 0 0;
+}
+/* line 175, ../sass/screen.sass */
+form fieldset input {
+  clear: left;
+}
+/* line 177, ../sass/screen.sass */
+form textarea {
+  font-family: "ff-meta-web-pro", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  border: 1px solid #d5d5d5;
+  padding: 2%;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+}
+/* line 185, ../sass/screen.sass */
+form textarea:focus {
+  outline: none;
+  border: 1px solid #888888;
+}
+/* line 188, ../sass/screen.sass */
+form textarea::-webkit-input-placeholder {
+  color: #888888;
+  font-style: italic;
+}
+/* line 191, ../sass/screen.sass */
+form textarea:-moz-placeholder {
+  color: #888888;
+  font-style: italic;
+}
+
+/* line 195, ../sass/screen.sass */
 footer {
   float: left;
   margin-top: 370px;
