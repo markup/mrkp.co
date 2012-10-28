@@ -2,8 +2,11 @@
 
   if (!empty($_POST['Name']) && !empty($_POST['Email']) && !empty($_POST['Message'])) {
 
-    $to = 'alfonso@mrkp.co'; // your email address, can be @gmail.com, etc.
-    $subject = 'Contact from mrkp.co'; // change yoursite.com to your own domain name
+    $to = 'alfonso@mrkp.co';
+    $subject = 'Contact from mrkp.co';
+    if (!empty($_POST['City'])) {
+      $subject = 'SPAM from mrkp.co';
+    }
     $message = "Name: ".$_POST['Name']."\r\nEmail: ".$_POST['Email']."\r\nStatus: ".$_POST['Status']."\r\n\r\nMessage:\r\n".$_POST['Message']."\r\n\r\nSender IP: ".$_SERVER["REMOTE_ADDR"];
     $headers = 'From: '.$_POST['Email']."\r\n".
                 'Reply-To: '.$_POST['Email']."\r\n";
