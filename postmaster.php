@@ -4,13 +4,12 @@
 
     $to = 'alfonso@mrkp.co';
     $subject = 'Contact from mrkp.co';
-    if (!empty($_POST['City'])) {
-      $subject = 'SPAM from mrkp.co';
-    }
     $message = "Name: ".$_POST['Name']."\r\nEmail: ".$_POST['Email']."\r\nStatus: ".$_POST['Status']."\r\n\r\nMessage:\r\n".$_POST['Message']."\r\n\r\nSender IP: ".$_SERVER["REMOTE_ADDR"];
     $headers = 'From: '.$_POST['Email']."\r\n".
                 'Reply-To: '.$_POST['Email']."\r\n";
-    mail($to, $subject, $message, $headers);
+    if (empty($_POST['City'])) {
+      mail($to, $subject, $message, $headers);
+    }
 
     header("Status: 200 OK", true, 200); ?>
     <h1>Successfully sent message</h1>
